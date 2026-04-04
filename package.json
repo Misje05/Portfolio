@@ -1,4 +1,5 @@
 {
+  "homepage": "https://misje05.github.io/Portfolio",
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +10,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "vitest run",
     "test:watch": "vitest"
   },
