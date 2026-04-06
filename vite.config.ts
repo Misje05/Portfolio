@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: "/Portfolio/",
+// Changes the base path based on the environment. (Localhost vs GitHub Pages)
+export default defineConfig(({ mode, command }) => ({
+  base: command === "serve" ? "/" : "/Portfolio/",
   
   server: {
     host: "::",

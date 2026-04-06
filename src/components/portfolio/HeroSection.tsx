@@ -26,16 +26,16 @@ const HeroSection = () => {
   }, [displayed, deleting, roleIndex]);
 
   return (
-    <section id="about" className="min-h-screen flex items-center particle-bg relative overflow-hidden">
+    <section id="about" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/8 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
 
       <div className="container relative z-10 py-32">
         <div className="max-w-3xl">
           <p className="text-primary font-mono text-sm mb-4 animate-fade-in-up opacity-0">Hi, my name is</p>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4 animate-fade-in-up opacity-0 stagger-1">
-            Magnus<span className="text-gradient">.</span>
+            <span className="text-gradient">M</span>agnus <span className="text-gradient">M</span>isje
           </h1>
           <div className="h-12 md:h-16 mb-6">
             <h2 className="text-2xl md:text-4xl font-bold text-muted-foreground animate-fade-in-up opacity-0 stagger-2">

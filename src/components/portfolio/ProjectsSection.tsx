@@ -14,9 +14,25 @@ const projects: Project[] = [
   {
     title: "FotReg",
     description:
-      "A football registration application with a robust .NET backend and a modern React frontend. Designed for managing player registrations, teams, and match data efficiently.",
-    tech: ["C#", ".NET", "React", "TypeScript"],
-    github: "https://github.com/Misje05",
+      "A football registration application with a .NET backend and a React frontend. Designed for managing player registrations and payments.",
+    tech: [".NET", "React", "StripeAPI"],
+    github: "https://github.com/Misje05/fotreg",
+    featured: true,
+  },
+  {
+    title: "Poker",
+    description:
+      "A poker game application with a SpringBoot backend and JSP frontend. Designed for managing multiple players online.",
+    tech: ["Java", "Spring Boot", "Bonobo Git"],
+    github: "https://github.com/Misje05/poker",
+    featured: true,
+  },
+  {
+    title: "Portfolio",
+    description:
+      "A personal portfolio website built with React and TypeScript. Showcases my projects, experience, and skills. ",
+    tech: ["React", "TypeScript"],
+    github: "https://github.com/Misje05/Portfolio",
     featured: true,
   },
 ];
@@ -77,7 +93,7 @@ const ProjectsSection = () => {
         <div ref={ref} className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-primary font-mono text-sm mb-2">02.</p>
           <h2 className="text-3xl md:text-4xl font-black">
-            Projects<span className="text-gradient">.</span>
+            <span className="text-gradient">P</span>rojects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mt-4" />
         </div>
@@ -87,7 +103,7 @@ const ProjectsSection = () => {
             <ProjectCard key={project.title} project={project} index={i} />
           ))}
 
-          {/* Add more placeholder */}
+          {/* Add more placeholder 
           <div className="glass-card border-dashed border-2 border-border/50 flex items-center justify-center p-8 min-h-[280px] opacity-40 hover:opacity-60 transition-opacity">
             <div className="text-center">
               <div className="w-12 h-12 mx-auto mb-3 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center">
@@ -95,7 +111,7 @@ const ProjectsSection = () => {
               </div>
               <p className="text-sm text-muted-foreground font-mono">More coming soon</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

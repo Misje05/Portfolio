@@ -8,12 +8,12 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "C# / .NET", category: "Backend", level: 80 },
   { name: "React", category: "Frontend", level: 75 },
-  { name: "TypeScript", category: "Frontend", level: 75 },
-  { name: "Python", category: "AI / ML", level: 85 },
-  { name: "Machine Learning", category: "AI / ML", level: 70 },
-  { name: "Git / GitHub", category: "Tools", level: 85 },
+  { name: "TypeScript", category: "Frontend", level: 65 },
+  { name: "C# / .NET", category: "Backend", level: 30 },
+  { name: "Java", category: "Backend", level: 90 },
+  { name: "Git / GitHub", category: "Tools", level: 80 },
+  { name: "Machine Learning", category: "AI / ML", level: 20 },
 ];
 
 const categories = ["All", ...Array.from(new Set(skills.map((s) => s.category)))];
@@ -31,7 +31,7 @@ const SkillsSection = () => {
         <div ref={ref} className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-primary font-mono text-sm mb-2">03.</p>
           <h2 className="text-3xl md:text-4xl font-black">
-            Skills & Tech<span className="text-gradient">.</span>
+            <span className="text-gradient">S</span>kills & Tech
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mt-4" />
         </div>

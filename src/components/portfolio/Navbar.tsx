@@ -26,7 +26,7 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#about" className="text-xl font-bold text-gradient font-mono">
-          M.
+          MM
         </a>
 
         {/* Desktop */}
