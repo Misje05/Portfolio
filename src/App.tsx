@@ -13,6 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      {/* Configuration for both lokal and github hosting. */}
       <BrowserRouter basename={import.meta.env.DEV ? "/" : "/Portfolio/"}>
         <Routes>
           <Route path="/" element={<Index />} />
