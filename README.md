@@ -1,3 +1,5 @@
-# Welcome to your Lovable project
+# Welcome mu Portfolio Project
 
-TODO: Document your project here
+### Upgrades 
+
+Make the flow of the page scrolling and not just teleporting while using the navbar
