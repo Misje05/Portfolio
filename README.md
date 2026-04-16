@@ -2,6 +2,6 @@
 
 This is where i started out. A page for me to show a brief overview of my abilities and accomplishments. 
 
-### Upgrades 
+### Updating
 
-Make the flow of the page scrolling and not just teleporting while using the navbar
+Push and deploy
