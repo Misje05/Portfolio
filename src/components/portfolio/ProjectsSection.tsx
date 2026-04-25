@@ -15,7 +15,7 @@ const projects: Project[] = [
     title: "FotReg",
     description:
       "A football registration application with a .NET backend and a React frontend. Designed for managing player registrations and payments.",
-    tech: [".NET", "React", "StripeAPI"],
+    tech: [".NET", "React", "PostgreSQL", "Stripe"],
     github: "https://github.com/Misje05/fotreg",
     featured: true,
   },
