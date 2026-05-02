@@ -22,7 +22,7 @@ const timeline: TimelineItem[] = [
     title: "Student Assistant - Programming",
     org: "HVL Bergen",
     description:
-      "Assisting students with Java assignments and correcting code assignment submissions.",
+      "Assisting students with Java assignments and correcting code assignment submissions. Employed in both DAT100 and DAT102 needing wide knowledge of Java.",
     type: "work",
   },
   /*{

@@ -12,6 +12,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "TrainingLog",
+    description:
+      "Training logging application created purely for practise, with C#, .NET, Swagger, containorized backend and database, all in one project. ",
+    tech: [".NET", "Swagger", "Docker", "PostgreSQL"],
+    github: "https://github.com/Misje05/TrainingLog",
+    featured: true,
+  },{
     title: "FotReg",
     description:
       "A football registration application with a .NET backend and a React frontend. Designed for managing player registrations and payments.",
@@ -31,10 +38,10 @@ const projects: Project[] = [
     title: "Portfolio",
     description:
       "A personal portfolio website built with React and TypeScript. Showcases my projects, experience, and skills. ",
-    tech: ["React", "TypeScript"],
+    tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Misje05/Portfolio",
     featured: true,
-  },
+  }
 ];
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
