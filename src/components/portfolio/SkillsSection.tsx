@@ -16,7 +16,7 @@ const skills: Skill[] = [
   { name: "Swagger", category: "Tools", level: 70 },
   { name: "PostgreSQL", category: "Database", level: 80 },
   { name: "Docker", category: "Tools", level: 40 },
-  { name: "Machine Learning", category: "AI / ML", level: 20 },
+  { name: "Mobile Development", category: "Frontend", level: 20 },
 ];
 
 const categories = ["All", ...Array.from(new Set(skills.map((s) => s.category)))];

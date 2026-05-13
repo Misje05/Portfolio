@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const roles = ["Data Engineering Student", "ML & AI Enthusiast", "Full-Stack Developer", "Problem Solver"];
+const roles = ["Data Engineering Student", "Web & Mobile Developer", "Full-Stack Developer", "Problem Solver"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -46,9 +46,9 @@ const HeroSection = () => {
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mb-10 animate-fade-in-up opacity-0 stagger-3">
             I'm a data engineering student at{" "}
             <span className="text-foreground font-medium">HVL Bergen</span> specializing in{" "}
-            <span className="text-primary font-medium">Machine Learning</span> and{" "}
-            <span className="text-accent font-medium">AI</span>. I'm passionate about building practical software
-            and applying AI to real-world problems.
+            <span className="text-primary font-medium">Web</span> and{" "}
+            <span className="text-accent font-medium">Mobile Development</span>. I'm passionate about building practical software
+            and creating seamless digital experiences.
           </p>
 
           <div className="flex gap-4 animate-fade-in-up opacity-0 stagger-4">

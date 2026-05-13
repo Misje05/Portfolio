@@ -14,7 +14,7 @@ const timeline: TimelineItem[] = [
     title: "Bachelor in Data Engineering",
     org: "HVL Bergen",
     description:
-      "Specialization in Machine Learning and Artificial Intelligence. Building a strong foundation in software engineering, data processing, and applied ML.",
+      "Specialization in Web and Mobile Development. Building a strong foundation in software engineering, web backend for frontend development, and database and hosting.",
     type: "education",
   },
   {
