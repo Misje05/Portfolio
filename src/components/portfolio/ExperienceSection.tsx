@@ -30,7 +30,7 @@ const timeline: TimelineItem[] = [
     title: "Internship / Work Experience",
     org: "TBD",
     description:
-      "Open to internships and opportunities in software development, data engineering, and machine learning.",
+      "Open to internships and opportunities in software development and data engineering.",
     type: "work",
   },*/
 ];
