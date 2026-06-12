@@ -28,8 +28,8 @@ const HeroSection = () => {
   return (
     <section id="about" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/8 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-[30%] left-0 w-[1000px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-[-12%] left-[55%] w-[700px] h-[400px] bg-accent/10 rounded-full blur-3xl" />
 
       <div className="container relative z-10 py-32">
         <div className="max-w-3xl">

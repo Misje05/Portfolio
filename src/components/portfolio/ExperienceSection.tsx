@@ -46,6 +46,7 @@ const ExperienceTimelineItem = ({ item, delay }: { item: TimelineItem; delay: nu
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
+      
       <div
         className={`absolute left-2.5 top-1 w-3 h-3 rounded-full border-2 transition-colors duration-500 ${
           itemVisible ? "bg-primary border-primary" : "bg-background border-muted-foreground/30"
@@ -64,7 +65,10 @@ const ExperienceSection = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="experience" className="py-32 relative">
+    <section id="experience" className="min-h-[60vh] py-32 relative">
+
+      <div className="absolute bottom-[20%] left-[10%] w-[700px] h-[500px] bg-primary/5 rounded-full blur-3xl animate-float" />
+      
       <div className="container">
         <div ref={ref} className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-primary font-mono text-sm mb-2">04.</p>

@@ -55,6 +55,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
+      <div className="absolute top-0 right-0 w-[500px] h-[300px] bg-primary/5 rounded-full blur-3xl animate-float" />
+      
       <div className="flex items-start justify-between mb-4">
         <div className="p-3 rounded-lg bg-primary/10 text-primary">
           <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -97,7 +99,7 @@ const ProjectsSection = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="projects" className="py-32 relative">
+    <section id="projects" className="min-h-[80vh] py-32 relative">
       <div className="container">
         <div ref={ref} className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-primary font-mono text-sm mb-2">02.</p>

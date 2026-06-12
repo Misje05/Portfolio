@@ -29,7 +29,10 @@ const SkillsSection = () => {
   const filtered = activeCategory === "All" ? skills : skills.filter((s) => s.category === activeCategory);
 
   return (
-    <section id="skills" className="py-32 relative">
+    <section id="skills" className="min-h-[80vh] py-32 relative">
+
+      <div className="absolute bottom-[40%] left-[10%] w-[700px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+
       <div className="container">
         <div ref={ref} className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-primary font-mono text-sm mb-2">03.</p>
@@ -68,6 +71,7 @@ const SkillsSection = () => {
               } ${hoveredSkill === skill.name ? "glow-border" : ""}`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
+              <div className="absolute top-0 right-0 w-[500px] h-[300px] bg-primary/10 rounded-full blur-3xl animate-float" />
               <div className="flex items-center justify-between mb-3">
                 <h3 className="font-semibold text-foreground">{skill.name}</h3>
                 <span className="text-xs font-mono text-muted-foreground">{skill.category}</span>
