@@ -17,22 +17,38 @@ const timeline: TimelineItem[] = [
       "Specialization in Web and Mobile Development. Building a strong foundation in software engineering, web backend for frontend development, and database and hosting.",
     type: "education",
   },
+  /*{
+    period: "August - December (2026)",
+    title: "Industry Placement Student",
+    org: "Sparebanken Norge",
+    description:
+      "Semester-long industry placement through DAT156. Collaboration with professionals and gaining hands-on experience working on real-world software development projects.",
+    type: "work",
+  },*/
   {
     period: "2025 – Present",
     title: "Student Assistant - Programming",
     org: "HVL Bergen",
     description:
-      "Assisting students with Java assignments and correcting code assignment submissions. Employed in both DAT100 and DAT102 needing wide knowledge of Java.",
+      "Student Assistant for three consecutive semesters. Assisting students in DAT100, DAT102 and DAT108 with Java and Spring programming, debugging and coursework, while also reviewing and correcting assignment submissions.",
     type: "work",
   },
-  /*{
-    period: "Coming soon",
-    title: "Internship / Work Experience",
-    org: "TBD",
+  {
+    period: "2025 – Present",
+    title: "Database & Invoice Coordinator",
+    org: "Norges Spiller Utvikling",
     description:
-      "Open to internships and opportunities in software development and data engineering.",
+      "Managing organizational data and invoice administration. Maintaining databases, handling payments and invoices, and ensuring accurate record keeping through Access and Tripletex.",
     type: "work",
-  },*/
+  },
+  {
+    period: "2025 – Present",
+    title: "AI Response Evaluator",
+    org: "Data Annotation",
+    description:
+      "Evaluating AI-generated responses, reviewing programming solutions, identifying bugs, and providing structured feedback to improve model performance.",
+    type: "work",
+  },
 ];
 
 const ExperienceTimelineItem = ({ item, delay }: { item: TimelineItem; delay: number }) => {

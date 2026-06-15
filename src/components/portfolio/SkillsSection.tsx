@@ -8,14 +8,14 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "React", category: "Frontend", level: 75 },
-  { name: "TypeScript", category: "Frontend", level: 65 },
+  { name: "React", category: "Frontend", level: 85 },
+  { name: "TypeScript", category: "Frontend", level: 75 },
   { name: "C# / .NET", category: "Backend", level: 60 },
   { name: "Java", category: "Backend", level: 90 },
-  { name: "Git / GitHub", category: "Tools", level: 80 },
+  { name: "Git / GitHub", category: "Tools", level: 85 },
   { name: "Swagger", category: "Tools", level: 70 },
   { name: "PostgreSQL", category: "Database", level: 80 },
-  { name: "Docker", category: "Tools", level: 40 },
+  { name: "Docker", category: "Tools", level: 60 },
   { name: "Mobile Development", category: "Frontend", level: 20 },
 ];
 

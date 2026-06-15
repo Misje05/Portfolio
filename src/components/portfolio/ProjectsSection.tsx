@@ -18,20 +18,21 @@ const projects: Project[] = [
     tech: [".NET", "Swagger", "Docker", "PostgreSQL"],
     github: "https://github.com/Misje05/TrainingLog",
     featured: true,
-  },{
+  }/*,{
     title: "FotReg",
     description:
       "A football registration application with a .NET backend and a React frontend. Designed for managing player registrations and payments.",
     tech: [".NET", "React", "PostgreSQL", "Stripe"],
     github: "https://github.com/Misje05/fotreg",
     featured: true,
-  },
+  }*/,
   {
     title: "Poker",
     description:
       "A poker game application with a SpringBoot backend and JSP frontend. Designed for managing multiple players online.",
     tech: ["Java", "Spring MVC", "JSP", "UI/UX"],
     github: "https://github.com/Misje05/poker",
+    live: "http://ider-database.westeurope.cloudapp.azure.com:8081/poker/login",
     featured: true,
   },
   {
@@ -40,6 +41,16 @@ const projects: Project[] = [
       "A personal portfolio website built with React and TypeScript. Showcases my projects, experience, and skills. ",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Misje05/Portfolio",
+    live: "https://misje05.github.io/Portfolio/",
+    featured: true,
+  },
+  {
+    title: "Hub",
+    description:
+      "Personal hub which is the connection point of my creations and a blog for what I'm currently working on. ",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Misje05/Misje05.github.io",
+    live: "https://misje05.github.io",
     featured: true,
   }
 ];
@@ -55,25 +66,25 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="absolute top-0 right-0 w-[500px] h-[300px] bg-primary/5 rounded-full blur-3xl animate-float" />
+      {/* Her gjør pointer-events-none slik at den ikke hindrer github knappene å virke. */}
+      <div className="absolute top-0 right-0 w-[500px] h-[300px] bg-primary/5 rounded-full blur-3xl animate-float pointer-events-none" />
       
       <div className="flex items-start justify-between mb-4">
         <div className="p-3 rounded-lg bg-primary/10 text-primary">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-            </svg>
+          <a
+            href={project.live || project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={project.live ? "Live site" : "GitHub repo"}
+            className="text-xl" /* sm, base, lg, xl, 2xl, 3xl */
+          >
+            {project.live ? "🌐" : "💻"}
           </a>
         </div>
         <div className="flex gap-3">
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <Github className="w-5 h-5" />
-            </a>
-          )}
-          {project.live && (
-            <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-              <ExternalLink className="w-5 h-5" />
             </a>
           )}
         </div>
@@ -114,7 +125,6 @@ const ProjectsSection = () => {
             <ProjectCard key={project.title} project={project} index={i} />
           ))}
 
-          {/* Add more placeholder 
           <div className="glass-card border-dashed border-2 border-border/50 flex items-center justify-center p-8 min-h-[280px] opacity-40 hover:opacity-60 transition-opacity">
             <div className="text-center">
               <div className="w-12 h-12 mx-auto mb-3 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center">
@@ -122,7 +132,8 @@ const ProjectsSection = () => {
               </div>
               <p className="text-sm text-muted-foreground font-mono">More coming soon</p>
             </div>
-          </div> */}
+          </div> 
+          
         </div>
       </div>
     </section>
