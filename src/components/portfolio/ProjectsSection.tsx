@@ -18,14 +18,16 @@ const projects: Project[] = [
     tech: [".NET", "Swagger", "Docker", "PostgreSQL"],
     github: "https://github.com/Misje05/TrainingLog",
     featured: true,
-  }/*,{
+  },
+  {
     title: "FotReg",
     description:
       "A football registration application with a .NET backend and a React frontend. Designed for managing player registrations and payments.",
     tech: [".NET", "React", "PostgreSQL", "Stripe"],
     github: "https://github.com/Misje05/fotreg",
+    live: "https://teamkid-connect.lovable.app",
     featured: true,
-  }*/,
+  },
   {
     title: "Poker",
     description:
